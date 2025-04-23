@@ -27,7 +27,7 @@ resource "aws_vpc" "devops-vpc" {
   instance_tenancy = "default"
 
   tags = {
-    Name = "devops-vpc"
+    Name = "devops-vpcc"
   }
 }
 
