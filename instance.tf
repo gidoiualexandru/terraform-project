@@ -6,7 +6,7 @@ terraform {
     }
   }
    backend "s3" {
-    bucket         = "my-terraform-state-bucket"
+    bucket         = "myterraformstatebucket21"
     key            = "dev/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
@@ -19,8 +19,8 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_budgets_budget" "test-budget" {
-  name              = "test-budget"
+resource "aws_budgets_budget" "test-budget-1" {
+  name              = "test-budget-1"
   budget_type       = "COST"
   limit_amount      = "0.01"
   limit_unit        = "USD"
